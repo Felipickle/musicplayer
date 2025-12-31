@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="player">
+  <img id="cover" src="cover.jpg">
+  <h2 id="title">Song Title</h2>
+  <p id="artist">Artist</p>
+
+  <audio id="audio"></audio>
+
+  <input type="range" id="progress" value="0">
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="togglePlay()">▶</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
