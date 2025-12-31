@@ -3,26 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>For You 💖</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .player {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(255,0,0,0.5);
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+      accent-color: red; /* slider color */
+    }
+
+  </style>
 </head>
 <body>
-
-<div class="player">
-  <img id="cover" src="cover.jpg">
-  <h2 id="title">Song Title</h2>
-  <p id="artist">Artist</p>
-
-  <audio id="audio"></audio>
-
-  <input type="range" id="progress" value="0">
-
-  <div class="controls">
-    <button onclick="prevSong()">⏮</button>
-    <button onclick="togglePlay()">▶</button>
-    <button onclick="nextSong()">⏭</button>
+  <div class="player">
+    <h2>🎵 My Song</h2>
+    <audio controls>
+      <source src="music/song1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
